@@ -54,7 +54,7 @@ public class MyController {
 	
 	//delete the course
 	@DeleteMapping("/products/{productId}")
-	public ResponseEntity<HttpStatus> deleteCourse(@PathVariable String productId){
+	public ResponseEntity<HttpStatus> deleteProduct(@PathVariable String productId){
 		try {
 			this.productServices.deleteProduct(Long.parseLong(productId));
 			return new ResponseEntity<>(HttpStatus.OK);
