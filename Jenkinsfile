@@ -49,7 +49,7 @@ pipeline {
                      else \
                     echo OK; \
                  fi;);
-            docker container run --restart always --name springboot-project -p 8081:8081 -d springboot-project
+            docker container run --restart always --name springboot-project -p 8081:9090 -d springboot-project
             '''
             }
         }
